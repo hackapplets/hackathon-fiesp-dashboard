@@ -1,6 +1,4 @@
-# pricing
-
-> Frontend of the Pricing Yebo Plugin
+# Dashboard Hackathon Fiesp
 
 ## Build Setup
 
