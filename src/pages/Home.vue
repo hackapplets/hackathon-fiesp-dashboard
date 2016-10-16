@@ -2,7 +2,7 @@
   <section class="home-page__content">
     <section class="section home-page__list">
       <section class="container">
-        <section class="columns">
+        <section class="columns is-multiline">
           <section class="column is-half">
             <section class="box home-page__content-table">
               <h1 class="title is-4">Distancia media percorrida</h1>
@@ -38,10 +38,25 @@
               </section>
             </section>
           </section>
-        </section>
 
-        <section class="box">
-          ...
+          <section class="column is-half">
+            <section class="box home-page__content-table">
+              <h1 class="title is-4">Mapa de Calor de trafego</h1>
+              <section class="home-page__graphic">
+                <img class="image" src="./../assets/heatmap.png">
+              </section>
+            </section>
+          </section>
+
+          <section class="column is-half">
+            <section class="box home-page__content-table">
+              <h1 class="title is-4">Avaliação por área</h1>
+              <section class="home-page__graphic">
+                <img class="image" src="./../assets/streetsmap.png">
+              </section>
+            </section>
+          </section>
+
         </section>
       </section>
     </section>
