@@ -27,11 +27,6 @@ $red: #ff0033;
 // Importing bulma
 @import "~bulma";
 
-//
-.page {
-  margin: 10px 0 0;
-}
-
 .slide-fade {
   &-enter-active {
 		transition: all 0.2s ease;

@@ -1,19 +1,47 @@
 <template>
   <section class="home-page__content">
-    <actions name="Grupos" :actions="actions"></actions>
-
-    <section class="home-page__list">
+    <section class="section home-page__list">
       <section class="container">
         <section class="columns">
-          <section class="box column is-half">
-            <h1 class="title is-4">...</h1>
-            <section class="home-page__graphic">
-              <vue-chart
-                  :columns="columns"
-                  :rows="rows"
-              ></vue-chart>
+          <section class="column is-half">
+            <section class="box home-page__content-table">
+              <h1 class="title is-4">Distancia media percorrida</h1>
+              <section class="home-page__graphic">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Distancia</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="distance in distances"><td>{{ distance }}</td><tr>
+                  </tbody>
+                </table>
+              </section>
             </section>
           </section>
+
+          <section class="column is-half">
+            <section class="box home-page__content-table">
+              <h1 class="title is-4">Amplitude do desolcamento</h1>
+              <section class="home-page__graphic">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Distancia</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="distance in distances"><td>{{ distance }}</td><tr>
+                  </tbody>
+                </table>
+              </section>
+            </section>
+          </section>
+        </section>
+
+        <section class="box">
+          ...
         </section>
       </section>
     </section>
@@ -23,25 +51,24 @@
 <script>
 // Components
 import Actions from './../components/Actions'
-import Chartist from 'vue-bulma-chartist'
 
 //
 export default {
   components: {
-    Actions,
-    Chartist
+    Actions
   },
   computed: {
   },
   data () {
     return {
-      actions: [],
-      columns: [12, 9, 7, 8, 5],
-      rows: [2, 1, 3.5, 7, 3]
+      distances: ['1km', '0.6km', '1.2km', '0.2km', '0.8km']
     }
   }
 }
 </script>
 
 <style lang="sass">
+.home-page
+  &__list
+    background: transparent
 </style>
