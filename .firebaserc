@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "hackathon-fiesp"
+    "default": "hackathon-fiesp",
+    "dash": "hackathon-fiesp-dash"
   }
 }
